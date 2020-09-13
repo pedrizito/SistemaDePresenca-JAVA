@@ -1,4 +1,5 @@
 package model;
+/*Nova classe*/
 
 public enum Serie {
 	

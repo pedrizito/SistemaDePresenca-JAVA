@@ -1,5 +1,7 @@
 package model;
 
+/*Nova classe*/
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 

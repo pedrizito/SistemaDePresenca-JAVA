@@ -1,5 +1,7 @@
 package application;
 
+/*Nova classe*/
+
 import java.util.Date;
 
 import javax.persistence.EntityManager;
@@ -16,7 +18,7 @@ public class Program {
 	
 	public static void main(String[] args) {
 		
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("sistema");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("sistemaChamada");
 		EntityManager em = emf.createEntityManager();
 		
 		Materia materia = new Materia ("Biologia");
