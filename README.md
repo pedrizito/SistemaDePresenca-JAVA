@@ -26,6 +26,6 @@ Os requisitos para fazer funcionar são o Java e o MySQL.
 |   JAVA   |[https://www.java.com/pt_BR/download/]|
 |   MySQL  |[https://www.mysql.com/products/community/]|
 
-###TODO
+### TODO
 
 [] Interfaces gráficas
