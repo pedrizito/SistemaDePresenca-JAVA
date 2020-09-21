@@ -18,4 +18,14 @@ Sistema que permite controlar a presença dos alunos em um determinado curso;
 
 ### Instalação
 
+Para rodar o código basta você clonar esse repositório.
+Os requisitos para fazer funcionar são o Java e o MySQL.
 
+|Tecnologia|DOWNLOAD|
+|----------|--------|
+|   JAVA   |[https://www.java.com/pt_BR/download/]|
+|   MySQL  |[https://www.mysql.com/products/community/]|
+
+###TODO
+
+[] Interfaces gráficas
