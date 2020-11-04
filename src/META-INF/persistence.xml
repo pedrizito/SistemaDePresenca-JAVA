@@ -10,7 +10,8 @@
         <class>model.Turma</class>
         <class>model.Serie</class>
         <class>model.Materia</class>
-        <class>model.Falta</class>
+        <class>model.Falta</class>  
+        <class>model.DiaLetivo</class>
         
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>

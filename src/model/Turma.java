@@ -1,7 +1,6 @@
 package model;
-/*Nova classe*/
-
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -34,6 +33,9 @@ public class Turma {
 	@OneToOne
 	@JoinColumn(name = "materia_id")
 	private Materia materia;
+	
+	@OneToMany(mappedBy = "turma")
+	private List<DiaLetivo> diasLetivo = new ArrayList<>();
 	
 	public Turma() {
 		
@@ -93,7 +95,15 @@ public class Turma {
 		temp.setMateria(materia);
 		return temp;
 	}
+	
+	public List<DiaLetivo> getDiasLetivo(){
+		return diasLetivo;
+	}
 
+	public void addDiaLetivo(DiaLetivo date) {
+		diasLetivo.add(date);
+		
+	}
 	@Override
 	public String toString() {
 		return "Turma [id=" + id + ", classe=" + classe + ", serie=" + serie + ", alunos=" + alunos + ", materia="
