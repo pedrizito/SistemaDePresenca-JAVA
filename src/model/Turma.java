@@ -11,6 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
@@ -30,7 +31,7 @@ public class Turma {
 	@OneToMany(mappedBy = "turma")
 	private List<Aluno> alunos = new ArrayList<>();
 	
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name = "materia_id")
 	private Materia materia;
 	

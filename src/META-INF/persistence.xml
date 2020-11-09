@@ -12,6 +12,16 @@
         <class>model.Materia</class>
         <class>model.Falta</class>  
         <class>model.DiaLetivo</class>
+        <class>view.tables.MateriaTableModel</class>
+        <class>view.TelaMateria</class>
+        <class>view.tables.TurmaTableModel</class>
+        <class>view.TelaTurma</class>
+        <class>view.TelaAdicionarTurma</class>
+        <class>view.TelaEditarTurma</class>
+        <class>view.TelaPrincipal</class>
+        <class>view.tables.AlunoTableModel</class>
+        <class>view.TelaAdicionarAluno</class>
+        <class>view.TelaEditarAluno</class>
         
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
@@ -26,7 +36,7 @@
                 value="org.hibernate.dialect.MySQL8Dialect"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
     </persistence-unit>
 </persistence>

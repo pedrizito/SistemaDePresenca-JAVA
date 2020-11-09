@@ -21,7 +21,7 @@ public class Falta {
 	private int id;
 	
 	@Column(nullable = false)
-	private Date data;
+	private Date date;
 	
 	@Transient
 	private SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
@@ -38,13 +38,13 @@ public class Falta {
 
 	public Falta(int id, Date data, boolean justificavel, Aluno aluno) {
 		this.id = id;
-		this.data = data;
+		this.date = data;
 		this.justificavel = justificavel;
 		this.aluno = aluno;
 	}
 	
 	public Falta(Date data, boolean justificavel, Aluno aluno) {
-		this.data = data;
+		this.date = data;
 		this.justificavel = justificavel;
 		this.aluno = aluno;
 	}
@@ -53,12 +53,12 @@ public class Falta {
 		return id;
 	}
 
-	public Date getData() {
-		return data;
+	public Date getDate() {
+		return date;
 	}
 
-	public void setData(Date data) {
-		this.data = data;
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	public boolean isJustificavel() {
@@ -71,6 +71,6 @@ public class Falta {
 
 	@Override
 	public String toString() {
-		return sdf.format(getData());
+		return sdf.format(getDate());
 	}	
 }

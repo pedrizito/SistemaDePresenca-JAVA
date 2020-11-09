@@ -1,7 +1,4 @@
 package model;
-
-/*Nova classe*/
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -82,7 +79,14 @@ public class Aluno {
 	public void addFaltas(Falta falta) {
 		faltas.add(falta);
 	}
-
+	
+	public void setTurma(Turma turma)	{
+		this.turma = turma;
+	}
+	
+	public Turma getTurma()	{
+		return turma;
+	}
 	@Override
 	public String toString() {
 		return "Aluno [id=" + id + ", nome=" + nome + ", registroEscolar=" + registroEscolar + ", faltas=" + faltas
